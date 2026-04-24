@@ -12,6 +12,10 @@
 
 </div>
 
+<p align="center">
+  <img src="docs/assets/portfolio-card.png" alt="TinyNet portfolio card" width="100%">
+</p>
+
 ---
 
 ## 📚 Repository Overview
@@ -32,8 +36,8 @@ A complete deep learning project tackling a challenging 251-class food image cla
 
 **Key Achievements:**
 - ✅ Custom CNN architecture with exactly 999,675 parameters (< 1M constraint)
-- ✅ 45.33% validation accuracy on 251 food categories
-- ✅ Self-supervised pre-training for improved convergence
+- ✅ 45.3% validation accuracy on 251 food categories
+- ✅ Self-supervised pre-training for representation learning and convergence analysis
 - ✅ Automated hyperparameter optimization with Optuna
 
 **Techniques Implemented:**
@@ -213,7 +217,7 @@ Detailed instructions available in [`Final_Project/README.md`](./Final_Project/R
 
 | Metric | Value | Context |
 |--------|-------|---------|
-| **Validation Accuracy** | 45.33% | 251 food categories |
+| **Validation Accuracy** | 45.3% | 251 food categories |
 | **F1-Score (micro)** | 0.4533 | Balanced performance |
 | **Model Parameters** | 999,675 | < 1M constraint ✓ |
 | **Training Time** | ~3 hours | RTX 3080, 150 epochs |
@@ -222,8 +226,8 @@ Detailed instructions available in [`Final_Project/README.md`](./Final_Project/R
 
 | Configuration | Accuracy | Notes |
 |---------------|----------|-------|
-| TinyNet + SSL | **45.33%** | Best overall |
-| TinyNet Baseline | 45.31% | Strong baseline |
+| TinyNet + SSL | **45.31%** | Best final accuracy in the tracked runs |
+| TinyNet Baseline | 45.31% | Nearly identical final accuracy |
 | Tuned + SSL | 43.93% | Faster convergence |
 | Tuned Only | 43.83% | Different optimum |
 
