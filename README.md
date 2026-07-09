@@ -60,12 +60,15 @@ report, Fig. 6.</em></p>
 
 ## How to run
 
-The final project lives in `Final_Project/` as Jupyter notebooks; weekly
-assignments are under `Assignments/A01`–`A09`:
+The final project lives in `Final_Project/`: `main.py` is a
+[jupytext](https://jupytext.readthedocs.io/) percent-format notebook with
+the full pipeline, `htuning.py` runs the Optuna hyperparameter search.
+Weekly assignments are under `Assignments/A01`–`A09`.
 
 ```sh
-pip install torch torchvision optuna scikit-learn matplotlib jupyter
-jupyter lab Final_Project/
+pip install torch torchvision optuna scikit-learn matplotlib jupytext
+jupytext --to notebook Final_Project/main.py   # or open main.py directly in VS Code / Jupyter
+python Final_Project/htuning.py                # Optuna search
 ```
 
 ## Report
